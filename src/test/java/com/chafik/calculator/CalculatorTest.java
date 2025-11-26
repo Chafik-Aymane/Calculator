@@ -4,18 +4,18 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 public class CalculatorTest {
-    Calculator calc;
+    //Calculator calc;
 
     @BeforeEach
     void setUp() {
-        calc = new Calculator();
+        //calc = new Calculator();
     }
 
     @AfterEach
     void tearDown() {
-        calc = null;
+        //calc = null;
     }
-    
+
     @Test
     void add_devrait_calculer_la_somme_de_deux_int(){
         int resultat = 15;

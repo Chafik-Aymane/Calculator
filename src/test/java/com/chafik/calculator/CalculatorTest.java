@@ -1,11 +1,21 @@
 package com.chafik.calculator;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 
 public class CalculatorTest {
-    private final Calculator calc = new Calculator();
+    Calculator calc;
 
+    @BeforeEach
+    void setUp() {
+        calc = new Calculator();
+    }
+
+    @AfterEach
+    void tearDown() {
+        calc = null;
+    }
+    
     @Test
     void add_devrait_calculer_la_somme_de_deux_int(){
         int resultat = 15;
